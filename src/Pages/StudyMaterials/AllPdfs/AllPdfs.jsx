@@ -5,7 +5,7 @@ import PdfViewer from "../PdfViewer/PdfViewer";
 const AllPdfs = () => {
   const [allPdfs, setAllPdfs] = useState([]);
   useEffect(() => {
-    fetch("data.json")
+    fetch("http://localhost:5000/allpdfs")
       .then((res) => res.json())
       .then((data) => setAllPdfs(data));
   }, []);
@@ -25,17 +25,7 @@ const AllPdfs = () => {
           ></SinglePdf>
         ))}
       </div>
-      {currentPdfUrl && (
-        // <div style={{ marginTop: "20px" }}>
-        //   <iframe
-        //     src={currentPdfUrl}
-        //     title={currentPdfUrl}
-        //     width="40%"
-        //     height="600px"
-        //   ></iframe>
-        // </div>
-        <PdfViewer currentPdfUrl={currentPdfUrl}></PdfViewer>
-      )}
+      {currentPdfUrl && <PdfViewer currentPdfUrl={currentPdfUrl}></PdfViewer>}
     </div>
   );
 };

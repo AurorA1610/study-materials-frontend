@@ -14,7 +14,7 @@ const PdfViewer = ({ currentPdfUrl }) => {
               src={currentPdfUrl}
               title={currentPdfUrl}
               width="100%"
-              height="500px"
+              height="550px"
             ></iframe>
           </div>
         </div>

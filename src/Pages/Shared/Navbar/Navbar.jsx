@@ -43,6 +43,9 @@ const Navbar = () => {
             <li>
               <Link to="/study-materials">Study Materials</Link>
             </li>
+            <li>
+              <Link to="/upload-materials">Upload Materials</Link>
+            </li>
           </ul>
         </div>
         <a className="btn btn-ghost text-xl">Study Materials</a>
@@ -54,6 +57,9 @@ const Navbar = () => {
           </li>
           <li>
             <Link to="/study-materials">Study Materials</Link>
+          </li>
+          <li>
+            <Link to="/upload-materials">Upload Materials</Link>
           </li>
         </ul>
       </div>

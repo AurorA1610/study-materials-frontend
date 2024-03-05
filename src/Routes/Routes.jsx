@@ -4,6 +4,7 @@ import Home from "../Pages/Home/Home/Home";
 import AllPdfs from "../Pages/StudyMaterials/AllPdfs/AllPdfs";
 import Login from "../Pages/Login/Login";
 import PrivateRoute from "./PrivateRoute";
+import UploadStudyMaterials from "../Pages/UploadStudyMaterials/UploadStudyMaterials";
 
 export const router = createBrowserRouter([
   {
@@ -19,6 +20,14 @@ export const router = createBrowserRouter([
         element: (
           <PrivateRoute>
             <AllPdfs></AllPdfs>
+          </PrivateRoute>
+        ),
+      },
+      {
+        path: "upload-materials",
+        element: (
+          <PrivateRoute>
+            <UploadStudyMaterials></UploadStudyMaterials>
           </PrivateRoute>
         ),
       },
