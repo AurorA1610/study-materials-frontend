@@ -17,11 +17,7 @@ export const router = createBrowserRouter([
       },
       {
         path: "study-materials",
-        element: (
-          <PrivateRoute>
-            <AllPdfs></AllPdfs>
-          </PrivateRoute>
-        ),
+        element: <AllPdfs></AllPdfs>,
       },
       {
         path: "upload-materials",
